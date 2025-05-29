@@ -17,11 +17,19 @@
         </a>
         <!-- Float links to the right. Hide them on small screens -->
         <div class="right hide-small">
-            <a href="#services" class="bar-item button">Our Services</a>
-            <a href="#about" class="bar-item button">Who are we?</a>
+            <a href="/pages/services.html" class="bar-item button">Our Services</a>
+            <a href="/pages/about.html" class="bar-item button">Who are we?</a>
             <a href="/pages/contact.html" class="bar-item button">Contact</a>
         </div>
+        <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="myFunction()">☰</a>
     </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navSmall" class="bar-block white hide hide-large hide-medium top" style="margin-top:80px;">
+    <a href="/pages/services.html" class="bar-item button padding-large" onclick="myFunction()">Our Services</a>
+    <a href="/pages/about.html" class="bar-item button padding-large" onclick="myFunction()">Who are we?</a>
+    <a href="/pages/contact.html" class="bar-item button padding-large" onclick="myFunction()">Contact</a>
 </div>
 
 <!-- Header -->
@@ -36,82 +44,6 @@
 <!-- Page content -->
 <div class="content padding" style="max-width:1564px">
 
-    <!-- Services Section -->
-    <div class="container padding-32" id="services">
-            <br><h3 class="border-bottom border-light-grey padding-16">Our Services</h3>
-    </div>
-
-    <div class="row-padding">
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Strategic Financial Planning</div>
-            <img src="/images/strategicplanning.png" alt="Financial Planning" style="width:100%">
-        </div>
-        </div>
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Forecasting & Modeling</div>
-            <img src="/images/forecasting.png" alt="Forecasting" style="width:100%">
-        </div>
-        </div>
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Investor-Ready Reporting</div>
-            <img src="/images/investor.png" alt="Investor reporting" style="width:100%">
-        </div>
-        </div>
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Operational Efficiency</div>
-            <img src="/images/operation.png" alt="Operational Efficiency" style="width:100%">
-        </div>
-    </div>
-    <div class="row-padding">
-        </div>
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Cross-Border Business Suport</div>
-            <img src="/images/crossbusiness.png" alt="Business Support" style="width:100%">
-        </div>
-        </div>
-        <div class="col l3 m6 margin-bottom">
-        <div class="display-container">
-            <div class="display-topleft black padding">Business Valuation & M&A Support</div>
-            <img src="/images/valuation.png" alt="M&A Support" style="width:100%">
-        </div>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="container padding-32" id="about">
-        <br><h3 class="border-bottom border-light-grey padding-16">About Us</h3>
-        <p>At Integrated Financial Solutions (IFS), we empower business leaders to move beyond the numbers and into strategic action. 
-            Rooted in precision and driven by purpose, we blend financial expertise with forward-thinking insight to support sustainable growth, 
-            business transformation, and investor readiness. We specialize in delivering customized financial strategy services for medium-sized 
-            businesses looking to scale, pivot, or strengthen their market position, especially those expanding into Latin America, Spain, or the 
-            U.S. market. 
-        </p>
-        <p>
-            Our approach bridges the gap between financial operations and executive decision-making by offering deep analysis, scenario 
-            modeling, and investor-level reporting that speaks the language of capital and credibility. From outsourced CFO services to merger & 
-            acquisition advisory, from strategic planning to board-level reporting, we bring clarity to complexity and confidence to critical decisions.
-        </p>
-        <p>
-        We don't just deliver solutions, we build lasting partnerships. Our team understands that transformation is both a financial and human journey. 
-        That’s why we combine global market experience, cultural intelligence, and modern financial tools to help leaders navigate change with confidence. 
-        Let’s align your financial story with your business vision and get you ready for what’s next.
-        </p>
-    </div>
-
-    <div class="row-padding grayscale">
-        <div class="col l3 m6 margin-bottom">
-        <img src="/images/ceo.jpg" alt="Vanessa" style="width:100%">
-        <h3>Vanessa Victoria</h3>
-        <p class="opacity">CEO & Founder</p>
-        <p>Transformational Executive with Global Perspective | Driving Operational Excellence & Impact Across Borders.</p>
-        </div>
-    </div>
-
     <!-- Image of logo -->
     <div class="container">
         <img src="/images/brand.png" class="image" style="width:100%">
@@ -119,11 +51,29 @@
 <!-- End page content -->
 </div>
 
-
 <!-- Footer -->
-<footer class="center black padding-16">
-    <p>© 2025 Integrated Financial Solutions</p>
+<footer class="center blue-grey padding-16">
+    <p>Copyright © 2025 | All rights reserved | 
+        <a href="/conditions/privacy.html" class="footer">Privacy Policy |</a>
+        <a href="/conditions/advertising.html" class="footer">Advertising Disclosure |</a> 
+        <a href="/conditions/termsofuse.html" class="footer">Terms of Use</a>
+    </p>
 </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+    var x = document.getElementById("navSmall");
+    if (x.classList.contains("show")) {
+        x.classList.remove("show");
+        x.classList.add("hide");
+    } else {
+        x.classList.remove("hide");
+        x.classList.add("show");
+    }
+}
+
+</script>
 
 </body>
 </html>

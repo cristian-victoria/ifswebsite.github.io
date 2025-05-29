@@ -32,11 +32,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Input */
 .input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 
-/* Bar */
-.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
-.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
-.bar .button{white-space:normal}
-
 /* Padding */
 .container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,
 .cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after{content:"";display:table;clear:both}
@@ -63,6 +58,18 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
 @media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}.auto{max-width:100%}}
+@media only screen and (max-width: 600px) {#navSmall {display: none;}}
+
+/* Bar Block */
+.bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
+.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
+.bar .button{white-space:normal}
+.bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
 
 /* Display */
 .top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
@@ -110,6 +117,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
 .padding-16{padding-top:16px!important;padding-bottom:16px!important}.padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .padding-32{padding-top:32px!important;padding-bottom:32px!important}.padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.footer{text-decoration:none!important}
 
 /* Left & Right */
 .left{float:left!important}.right{float:right!important}
@@ -117,9 +125,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Button */
 .button:hover{color:#000!important;background-color:#ccc!important}
 
+/* Policy Pages */
+.policiesheader{height: 200px;padding: 20px;}
+
 /* Colors */
 .white,.hover-white:hover{color:#000!important;background-color:#fff!important}
 .black,.hover-black:hover{color:#fff!important;background-color:#000!important}
+.blue-grey,.hover-blue-grey:hover,.blue-gray,.hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
 .text-light-grey,.hover-text-light-grey:hover,.text-light-gray,.hover-text-light-gray:hover{color:#f1f1f1!important}
 .border-light-grey,.hover-border-light-grey:hover,.border-light-gray,.hover-border-light-gray:hover{border-color:#f1f1f1!important}
 .danger{color:#fff!important;background-color:#dd0000!important}
